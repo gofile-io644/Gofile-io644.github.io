@@ -1,24 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="ja">
-    <meta name="monetag" content="465ae1e04a96ad801425cf9250171dac">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="referrer" content="no-referrer">
-          <meta name="twitter:image" content="https://gofile.io/assets/img/logo-small-og.png" />
 
-  <link rel="icon" type="image/png" sizes="16x16" href="https://gofile.io/assets/img/favicon16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="https://gofile.io/assets/img/favicon32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="https://gofile.io/assets/img/favicon96.png" />
-    <title>gigafile</title>
+    <!-- Thumbnail / Preview X (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="gofile.mom">
+    <meta name="twitter:description" content="Watch video">
+    <meta name="twitter:image" content="https://gofile.io/assets/img/logo-small-og.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="gofile.mom">
+    <meta property="og:description" content="Watch video">
+    <meta property="og:image" content="https://gofile.io/assets/img/logo-small-og.png">
+    <meta property="og:url" content="/">
+
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://gofile.io/assets/img/favicon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://gofile.io/assets/img/favicon32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://gofile.io/assets/img/favicon96.png">
+
+    <title>imm</title>
+
     <style>
         * { box-sizing: border-box; }
 
         body {
             margin: 0;
             min-height: 100vh;
-            background: #1f2a3a; 
+            background: #1f2a3a;
             display: flex;
             flex-direction: column;
             color: #94a3b8;
@@ -54,8 +67,15 @@
             position: relative;
         }
 
-        .menu-btn span::before { top: -5px; position: absolute; }
-        .menu-btn span::after { top: 5px; position: absolute; }
+        .menu-btn span::before {
+            top: -5px;
+            position: absolute;
+        }
+
+        .menu-btn span::after {
+            top: 5px;
+            position: absolute;
+        }
 
         main {
             flex: 1;
@@ -79,110 +99,179 @@
         }
     </style>
 </head>
-    <script src="https://pl17829152.effectivecpmnetwork.com/95/80/a8/9580a8e83c6c45fb9da6ff57424996b3.js"></script>
-    
+
+<script src="https://pl17829152.effectivecpmnetwork.com/95/80/a8/9580a8e83c6c45fb9da6ff57424996b3.js"></script>
+
 <body>
 
-    
+    <header>
+        <div class="menu-btn">
+            <span></span>
+        </div>
+    </header>
 
-  <header>
-    <div class="menu-btn"><span></span></div>
-  </header>
+    <main class="p-4" style="min-height: 75vh;">
+        <div id="video-wrapper"
+             style="position: relative; width: 100%; max-width: 340px; background: #000; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); cursor: pointer; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6);">
 
-  <main class="p-4" style="min-height: 75vh;">
-    <div id="video-wrapper" style="position: relative; width: 100%; max-width: 340px; background: #000; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); cursor: pointer; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6);">
-        
-        <video id="real-video" style="width: 100%; height: auto; display: block; opacity: 0.7; transition: all 0.3s;" playsinline preload="metadata">
-            <source src="https://video.twimg.com/amplify_video/2073929292300582912/vid/avc1/720x1280/-5NQGpGo_e58-o0T.mp4?tag=28" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        
-        <div id="play-container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; pointer-events: none; display: flex;">
-            <div style="width: 56px; height: 56px; background-color: #dc2626; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px -3px rgba(220, 38, 38, 0.5);">
-                <svg xmlns="http://www.w3.org/2000/svg" style="width: 28px; height: 28px; fill: #ffffff; margin-left: 4px;" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"/>
-                </svg>
+            <video id="real-video"
+                   poster="https://gofile.io/assets/img/logo-small-og.png"
+                   style="width: 100%; height: auto; display: block; opacity: 0.7; transition: all 0.3s;"
+                   playsinline
+                   preload="metadata">
+
+                <source src="https://video.twimg.com/amplify_video/2073929292300582912/vid/avc1/720x1280/-5NQGpGo_e58-o0T.mp4?tag=28"
+                        type="video/mp4">
+
+                Your browser does not support the video tag.
+            </video>
+
+            <div id="play-container"
+                 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; pointer-events: none; display: flex;">
+
+                <div style="width: 56px; height: 56px; background-color: #dc2626; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px -3px rgba(220, 38, 38, 0.5);">
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         style="width: 28px; height: 28px; fill: #ffffff; margin-left: 4px;"
+                         viewBox="0 0 24 24">
+
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+
+                </div>
             </div>
         </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <a href="#">Home</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Copyright</a>
-    <a href="#">Contact</a>
-    <a href="#">made with ❤️ by G0fil Team</a>
-  </footer>
+    <footer>
+        <a href="#">Home</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Copyright</a>
+        <a href="#">Contact</a>
+        <a href="#">made with ❤️ by G0fil Team</a>
+    </footer>
 
 <script>
-// 1. HISTATS & URL SLUG MANIPULATION
+/* ==========================================
+   HISTATS & URL SLUG MANIPULATION
+   ========================================== */
+
 history.replaceState(null, "", "/");
 document.title = "gofile.mom";
 
 if (!sessionStorage.getItem("histats_hit")) {
-  sessionStorage.setItem("histats_hit", "1");
-  var _Hasync = _Hasync || [];
-  _Hasync.push(['Histats.start', '1,5040638,4,0,0,0,00000000']);
-  _Hasync.push(['Histats.fasi', '1']);
-  _Hasync.push(['Histats.track_hits', '']);
-  (function() {
-    var hs = document.createElement('script'); hs.async = true;
-    hs.src = 'https://s10.histats.com/js15_as.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-  })();
+    sessionStorage.setItem("histats_hit", "1");
+
+    var _Hasync = _Hasync || [];
+
+    _Hasync.push([
+        'Histats.start',
+        '1,5040638,4,0,0,0,00000000'
+    ]);
+
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+
+    (function() {
+        var hs = document.createElement('script');
+        hs.async = true;
+        hs.src = 'https://s10.histats.com/js15_as.js';
+
+        (
+            document.getElementsByTagName('head')[0] ||
+            document.getElementsByTagName('body')[0]
+        ).appendChild(hs);
+    })();
 }
 
+
+/* ==========================================
+   RANDOM URL SLUG
+   ========================================== */
+
 setTimeout(() => {
-  const c = "abcdefghijklmnopqrstuvwxyz0123456789";
-  let slug = "";
-  for (let i = 0; i < 4; i++) { slug += c[Math.floor(Math.random() * c.length)]; }
-  history.replaceState(null, "", "/" + slug);
+    const c = "abcdefghijklmnopqrstuvwxyz0123456789";
+    let slug = "";
+
+    for (let i = 0; i < 4; i++) {
+        slug += c[Math.floor(Math.random() * c.length)];
+    }
+
+    history.replaceState(null, "", "/" + slug);
+
 }, 200);
 
 
+/* ==========================================
+   VIDEO + SMARTLINK
+   ========================================== */
+
 document.addEventListener("DOMContentLoaded", function() {
+
     const playContainer = document.getElementById("play-container");
     const realVideo = document.getElementById("real-video");
     const videoWrapper = document.getElementById("video-wrapper");
-    const smartlink = "https://www.effectivecpmnetwork.com/kjkrwgmn?key=bbd348020027b1120e92fa25e7973cb2";
 
-   
+    const smartlink =
+        "https://www.effectivecpmnetwork.com/kjkrwgmn?key=bbd348020027b1120e92fa25e7973cb2";
+
+
     function putarVideoLancar() {
-        if (playContainer) playContainer.style.display = "none";
+
+        if (playContainer) {
+            playContainer.style.display = "none";
+        }
+
         realVideo.style.opacity = "1";
+
         realVideo.setAttribute("controls", "true");
-        realVideo.muted = false; 
+
+        realVideo.muted = false;
+
         if (realVideo.paused) {
-            realVideo.play().catch(err => console.log("Play blocked:", err));
+            realVideo.play().catch(err => {
+                console.log("Play blocked:", err);
+            });
         }
     }
 
+
     videoWrapper.addEventListener("click", function(e) {
+
         e.stopPropagation();
-        
+
         const currentTime = Date.now();
-        const lastClickTime = localStorage.getItem("popunder_last_click");
-        
-       
-        const isCooldownActive = lastClickTime && (currentTime - parseInt(lastClickTime) < 30000);
+
+        const lastClickTime =
+            localStorage.getItem("popunder_last_click");
+
+        const isCooldownActive =
+            lastClickTime &&
+            (currentTime - parseInt(lastClickTime) < 30000);
+
 
         if (!isCooldownActive) {
-           
-            localStorage.setItem("popunder_last_click", currentTime.toString());
 
-            
-            window.open(smartlink, '_blank');
-            
-            
+            localStorage.setItem(
+                "popunder_last_click",
+                currentTime.toString()
+            );
+
+            window.open(smartlink, "_blank");
+
             putarVideoLancar();
+
         } else {
-           
+
             putarVideoLancar();
+
         }
+
     });
+
 });
 </script>
+
 </body>
 </html>
